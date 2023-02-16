@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBoxText = new System.Windows.Forms.ListBox();
+            this.listBoxTest = new System.Windows.Forms.ListBox();
             this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBoxText
+            // listBoxTest
             // 
-            this.listBoxText.FormattingEnabled = true;
-            this.listBoxText.ItemHeight = 16;
-            this.listBoxText.Location = new System.Drawing.Point(12, 12);
-            this.listBoxText.Name = "listBoxText";
-            this.listBoxText.Size = new System.Drawing.Size(776, 244);
-            this.listBoxText.TabIndex = 0;
+            this.listBoxTest.FormattingEnabled = true;
+            this.listBoxTest.ItemHeight = 16;
+            this.listBoxTest.Location = new System.Drawing.Point(12, 12);
+            this.listBoxTest.Name = "listBoxTest";
+            this.listBoxTest.Size = new System.Drawing.Size(776, 244);
+            this.listBoxTest.TabIndex = 0;
             // 
             // btnRun
             // 
@@ -49,6 +49,7 @@
             this.btnRun.TabIndex = 1;
             this.btnRun.Text = "Проверка соединения";
             this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // Form
             // 
@@ -56,7 +57,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRun);
-            this.Controls.Add(this.listBoxText);
+            this.Controls.Add(this.listBoxTest);
             this.Name = "Form";
             this.Text = "Form";
             this.ResumeLayout(false);
@@ -65,7 +66,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBoxText;
+        private System.Windows.Forms.ListBox listBoxTest;
         private System.Windows.Forms.Button btnRun;
     }
 }
